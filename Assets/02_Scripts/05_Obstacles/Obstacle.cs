@@ -1,21 +1,22 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Serialization;
 
 public class Obstacle : MonoBehaviour
 {
-    public UnityEvent onPlayerCollision; // Event für externe Aktionen
+    public UnityEvent onPlayerTrigger; // Event für externe Aktionen
 
     private void Awake()
     {
-        if (onPlayerCollision == null)
-            onPlayerCollision = new UnityEvent(); // Verhindert Null-Referenz
+        if (onPlayerTrigger == null)
+            onPlayerTrigger = new UnityEvent(); // Verhindert Null-Referenz
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            onPlayerCollision?.Invoke(); // Event auslösen
+            onPlayerTrigger?.Invoke(); // Event auslösen
         }
     }
 }

@@ -108,10 +108,11 @@ public class World : MonoBehaviour
         }
         _currentSegmentCount++;
         
-        if (_spawnedSegments.Count > 5)
+        if (_spawnedSegments.Count > 10)
         {
-            _currentLength -= _spawnedSegments[0].GetComponent<Segment>().GetLength();
             var temp = _spawnedSegments[0];
+            _currentLength -= temp.GetComponent<Segment>().GetLength();
+            
             _spawnedSegments.RemoveAt(0);
             Destroy(temp);
         }
