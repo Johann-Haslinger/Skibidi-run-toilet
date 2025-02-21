@@ -8,7 +8,6 @@ public class SegmentEndTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             World.Instance.GenerateNextSegment();
-            Debug.Log(this.name);
             Destroy(gameObject);
         }
     }

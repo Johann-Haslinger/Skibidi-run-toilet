@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -11,9 +12,9 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void OnMouseDown()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && JumpAllowed())
+        if (JumpAllowed())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             isGrounded = false;
@@ -51,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
                 CameraShaker.Instance.DefaultShake();
                 Vector3 particlePos = new Vector3(transform.position.x, collision.contacts[0].point.y,
                     transform.position.z);
-                ParticleProvider.Instance.SpawnHitParticles(particlePos, collision.contacts[0].normal * -1f);
+                ParticleProvider.Instance.SpawnHitParticles(particlePos, collision.contacts[0].normal);
             }
             isGrounded = true;
             // CAMERA SHAKE ON GROUND HIT

@@ -15,4 +15,16 @@ public class ObstacleReactions : MonoBehaviour
     {
         transform.DOScale(0, 0.2f);
     }
+
+    public void FadeOut()
+    {
+        var temp = transform.GetComponent<SpriteRenderer>();
+        temp.DOFade(0, 0.2f);
+    }
+
+    public void SquishOut()
+    {
+        var temp = transform.localScale;
+        transform.DOScale(new Vector3(temp.x, 0, temp.z), 0.2f);
+    }
 }
