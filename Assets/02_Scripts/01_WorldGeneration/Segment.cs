@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Segment : MonoBehaviour
@@ -14,5 +15,10 @@ public class Segment : MonoBehaviour
    public float GetLength()
    {
       return _length;
+   }
+
+   private void Update()
+   {
+      transform.position -= new Vector3(VALUES.WorldSpeed * Time.deltaTime, 0, 0);
    }
 }
