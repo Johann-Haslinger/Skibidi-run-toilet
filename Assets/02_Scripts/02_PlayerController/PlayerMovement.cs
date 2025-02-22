@@ -43,10 +43,18 @@ public class PlayerMovement : MonoBehaviour
     
     private void Jump()
     {
-        transform.DOScale(new Vector3(1 - _stretchPercentage, 1 + _stretchPercentage, 1), 0.1f);
         _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
         _isGrounded = false;
         
+        JumpingVFX();
+    }
+
+    private void JumpingVFX()
+    {
+        transform.DOScale(new Vector3(1 - _stretchPercentage, 1 + _stretchPercentage, 1), 0.1f);
+        Vector3 particlePos = new Vector3(transform.position.x, transform.position.y - 0.5f,
+            transform.position.z);
+        ParticleProvider.Instance.SpawnHitParticles(particlePos, transform.up);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
@@ -56,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
             bool comingFromAbove = collision.transform.position.y < transform.position.y;
             if (!_isGrounded && comingFromAbove)
             {
-                _isGrounded = true;
+                
                 Land(collision);
             }
         }
@@ -64,18 +72,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Land(Collision2D collision)
     {
-        transform.DOScale(new Vector3(1 + (_stretchPercentage * 2) ,1 - _stretchPercentage, 1), 0.1f).OnComplete(() =>
-        {
-            transform.DOScale(Vector3.one, 0.1f);
-        });
+        _isGrounded = true;
         LandingVFX(collision);
     }
 
     private void LandingVFX(Collision2D collision)
     {
+        transform.DOScale(new Vector3(1 + (_stretchPercentage * 2) ,1 - _stretchPercentage, 1), 0.1f).OnComplete(() =>
+        {
+            transform.DOScale(Vector3.one, 0.1f);
+        });
         CameraShaker.Instance.DefaultShake();
-        Vector3 particlePos = new Vector3(transform.position.x, collision.contacts[0].point.y,
-            transform.position.z);
-        ParticleProvider.Instance.SpawnHitParticles(particlePos, collision.contacts[0].normal);
     }
 }
