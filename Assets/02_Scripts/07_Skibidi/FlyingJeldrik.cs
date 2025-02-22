@@ -82,7 +82,7 @@ public class FlyingJeldrik : MonoBehaviour
 
         if (audioSource != null && collisionSound != null)
         {
-            audioSource.PlayOneShot(collisionSound); // Kollisionston abspielen
+            audioSource.PlayOneShot(collisionSound, 0.3f); // Kollisionston abspielen
         }
 
         // Start the shrinking coroutine
