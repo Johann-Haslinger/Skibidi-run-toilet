@@ -501,7 +501,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4126477851091925757, guid: 15153b119db504bdc8f8dc26d4c17044, type: 3}
       propertyPath: score
-      value: 99999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4126477851091925757, guid: 15153b119db504bdc8f8dc26d4c17044, type: 3}
       propertyPath: scoreText
