@@ -14,7 +14,7 @@ public class BackgroundSetter : MonoBehaviour
         sr.sprite = backgroundSprite;
         
         // Hintergrund hinter allem anzeigen (höhere negative Z-Position)
-        bg.transform.position = new Vector3(0, 0, 10);
+        bg.transform.position = new Vector3(0, 0, 80);
         
         // Kamera-Breite und Höhe berechnen
         float screenHeight = Camera.main.orthographicSize * 2f;
