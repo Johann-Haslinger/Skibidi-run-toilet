@@ -67,19 +67,19 @@ PrefabInstance:
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[1]'
       value: 
-      objectReference: {fileID: 4615905677052063526, guid: 2ef923cb0931ddb4f881dea33780881e, type: 3}
+      objectReference: {fileID: 2178394424754134429, guid: 2e9ec9e2af66a224bbbafcc3b22ee6fd, type: 3}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[2]'
       value: 
-      objectReference: {fileID: 4615905677052063526, guid: 8c7abe6e26734094eb3afbd2e417bb58, type: 3}
+      objectReference: {fileID: 8367806572994376456, guid: ad099eebeb7131d40820b24a01ce8c82, type: 3}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[3]'
       value: 
-      objectReference: {fileID: 4615905677052063526, guid: 676e79d45607f734487b0ab0f2b07959, type: 3}
+      objectReference: {fileID: 7273283681882587447, guid: ea88c7cd2fe424d4f9821853af3961c2, type: 3}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[4]'
       value: 
-      objectReference: {fileID: 4615905677052063526, guid: a6b2a334326d4a94893ad729beaed791, type: 3}
+      objectReference: {fileID: 7139743951194870472, guid: be0232d807b59b54b991f37750b8659f, type: 3}
     - target: {fileID: 6973446506996161827, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: m_Name
       value: ActivateJumpObstacles
