@@ -1,14 +1,18 @@
 using UnityEngine;
+using System.Collections;
 
 public class FlyingJeldrik : MonoBehaviour
 {
     public RectTransform imageRect; // Das RectTransform des Bildes
     public float speed = 500f; // Geschwindigkeit des Bildes
     public AudioClip collisionSound; // Der Ton, der abgespielt wird
+    public float shrinkDuration = 0.1f; // Dauer des Schrumpfens
+    public float shrinkScale = 0.8f; // Schrumpfmaßstab
 
     private Vector2 direction; // Richtung, in die sich das Bild bewegt
     private float minX, maxX, minY, maxY;
     private AudioSource audioSource;
+    private Vector2 originalSize;
 
     void Start()
     {
@@ -40,9 +44,7 @@ public class FlyingJeldrik : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-
-            Debug.LogError("Kein CoinManager in der Szene gefunden!");
- 
+        originalSize = imageRect.sizeDelta;
     }
 
     void Update()
@@ -76,14 +78,22 @@ public class FlyingJeldrik : MonoBehaviour
     // Methode, die bei Kollision mit der Wand aufgerufen wird
     void OnCollisionWithWall()
     {
-      
-    
-            CoinManager.instance.AddScore(1); 
- 
+        CoinManager.instance.AddScore(1);
 
         if (audioSource != null && collisionSound != null)
         {
             audioSource.PlayOneShot(collisionSound); // Kollisionston abspielen
         }
+
+        // Start the shrinking coroutine
+        StartCoroutine(ShrinkAndGrow());
+    }
+
+    // Coroutine to handle shrinking and growing effect
+    IEnumerator ShrinkAndGrow()
+    {
+        imageRect.sizeDelta = originalSize * shrinkScale;
+        yield return new WaitForSeconds(shrinkDuration);
+        imageRect.sizeDelta = originalSize;
     }
 }
