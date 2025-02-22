@@ -121,19 +121,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_SizeDelta.x
@@ -173,11 +173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -436
+      value: 153
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 151
+      value: -81
       objectReference: {fileID: 0}
     - target: {fileID: 2083370728038665023, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -195,6 +195,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoinText
       objectReference: {fileID: 0}
+    - target: {fileID: 3171408381222557010, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
+      propertyPath: m_text
+      value: 'Skibidi:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3171408381222557010, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
+    - target: {fileID: 3171408381222557010, guid: dac7bc853ce434eb2a22202f262b3315, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -7813014762709058882, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

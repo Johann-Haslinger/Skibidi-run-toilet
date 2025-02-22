@@ -35,6 +35,11 @@ public class World : MonoBehaviour
         }
     }
 
+    public void AddPossibleSegments(List<GameObject> segments)
+    {
+        _randomSegmentPrefabs.AddRange(segments);
+    }
+
     private void OnDestroy()
     {
         Instance = null;
