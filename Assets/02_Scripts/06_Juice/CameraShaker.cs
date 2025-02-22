@@ -30,7 +30,7 @@ public class CameraShaker : MonoBehaviour
         });
     }
 
-    public void CustomShake(float duration, float strength)
+    public void CustomShake(float duration, Vector3 strength)
     {
         var temp = transform.position;
         transform.DOShakePosition(duration, strength).OnComplete(() =>

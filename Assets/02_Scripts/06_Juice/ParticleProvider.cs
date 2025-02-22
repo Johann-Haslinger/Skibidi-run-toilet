@@ -5,6 +5,8 @@ public class ParticleProvider : MonoBehaviour
 {
     
     [SerializeField] private GameObject _hitParticles;
+    [SerializeField] private GameObject _collectParticles;
+    
     [SerializeField] private float  _maxLifeTime;
 
     public static ParticleProvider Instance;
@@ -25,6 +27,12 @@ public class ParticleProvider : MonoBehaviour
     {
         var temp = Instantiate(_hitParticles, position, Quaternion.identity);
         temp.transform.up = direction;
+        Destroy(temp, _maxLifeTime);
+    }
+
+    public void SpawnCollectParticles(Vector3 position)
+    {
+        var temp = Instantiate(_collectParticles, position, Quaternion.identity);
         Destroy(temp, _maxLifeTime);
     }
 }
