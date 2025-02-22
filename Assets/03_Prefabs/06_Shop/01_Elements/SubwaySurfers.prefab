@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2810339604243964182}
   - component: {fileID: 8444588797119718523}
   - component: {fileID: -5580865349212087184}
+  - component: {fileID: 3703707637301352051}
   m_Layer: 5
   m_Name: SubwaySurfers
   m_TagString: Untagged
@@ -56,7 +57,7 @@ VideoPlayer:
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 2
   m_AspectRatio: 2
-  m_DataSource: 0
+  m_DataSource: 1
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -86,6 +87,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0a5491b74bf4e0c98c000948346d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3703707637301352051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4830376840054320276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb83df5cc6e5944aba292ecc9232916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _videoPlayer: {fileID: 8444588797119718523}
+  _videoName: SubwaySurfersVideo.mp4
 --- !u!1 &8717980108932147749
 GameObject:
   m_ObjectHideFlags: 0

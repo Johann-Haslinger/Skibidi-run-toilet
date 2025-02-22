@@ -457,6 +457,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4126477851091925757, guid: 15153b119db504bdc8f8dc26d4c17044, type: 3}
+      propertyPath: score
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126477851091925757, guid: 15153b119db504bdc8f8dc26d4c17044, type: 3}
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 572458973}
@@ -581,7 +585,7 @@ MonoBehaviour:
   _startPos: {x: 0, y: -5, z: 0}
   _startSpeed: 5
   _randomSegmentPrefabs:
-  - {fileID: 8756740972142782591, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
+  - {fileID: 4615905677052063526, guid: 2ef923cb0931ddb4f881dea33780881e, type: 3}
   _defaultSegmentPrefabs: []
   _forceDefault: 0
   _orderSegmentPrefabs:
