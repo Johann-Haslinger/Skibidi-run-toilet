@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _jumpForce = 5f;
     [SerializeField, Range(0,1)] private float _stretchPercentage = 0.1f;
+    [SerializeField] private AudioClip _jumpSound;
+    [SerializeField] private AudioClip _landSound;
     private Rigidbody2D _rb;
     private bool _isGrounded = false;
 
@@ -67,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 particlePos = new Vector3(transform.position.x, transform.position.y - 0.5f,
             transform.position.z);
         ParticleProvider.Instance.SpawnHitParticles(particlePos, transform.up);
+        AudioSource.PlayClipAtPoint(_jumpSound, Vector3.zero);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
