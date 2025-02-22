@@ -59,4 +59,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
   - {fileID: 11400000, guid: cdac4f9121547436ead8f195972b4bb8, type: 2}
   - {fileID: 11400000, guid: d73732d4deab144b1a7289393fd48ff6, type: 2}
+  - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  - {fileID: 11400000, guid: 335851c924fef42909c8833f1cad609f, type: 2}
   purchaseSound: {fileID: 8300000, guid: ab786d0d436fc4679bffb0bbb36d07e3, type: 3}
