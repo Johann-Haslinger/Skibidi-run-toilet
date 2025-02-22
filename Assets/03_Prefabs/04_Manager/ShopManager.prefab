@@ -47,6 +47,11 @@ MonoBehaviour:
   shopPanel: {fileID: 0}
   shopItemPrefab: {fileID: 2453917394561881, guid: f28c2a6574992429f83666a96b4f6597, type: 3}
   availableItems:
-  - {fileID: 11400000, guid: 7ffa5179f30fd49809685528f024fa82, type: 2}
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  - {fileID: 11400000, guid: 7ffa5179f30fd49809685528f024fa82, type: 2}
+  - {fileID: 11400000, guid: d502704a375c942e7909ed942566bcb8, type: 2}
+  - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  - {fileID: 11400000, guid: e3ac11964e4384b4fb1c53082449fb37, type: 2}
+  - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  - {fileID: 11400000, guid: d73732d4deab144b1a7289393fd48ff6, type: 2}
   purchaseSound: {fileID: 8300000, guid: ab786d0d436fc4679bffb0bbb36d07e3, type: 3}
