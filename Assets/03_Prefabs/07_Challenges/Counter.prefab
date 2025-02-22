@@ -284,10 +284,10 @@ MonoBehaviour:
       - m_Target: {fileID: 307771652804324735}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 2100990880172306139}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
@@ -323,7 +323,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -380,8 +380,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _coin: {fileID: 5857118686627767119}
-  _counters: []
+  _counters:
+  - {fileID: 2100990880172306139}
+  - {fileID: 7188084448044682314}
+  - {fileID: 7114141228024385134}
+  - {fileID: 6405506137514828035}
+  - {fileID: 8146965655996731503}
   _neededCount: 3
+  _rightColor: {r: 0.05490196, g: 0.99215686, b: 0.05490196, a: 1}
+  _wrongColor: {r: 0.9372549, g: 0.06666667, b: 0.003921569, a: 1}
 --- !u!1 &6127307273837977184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,10 +1025,10 @@ MonoBehaviour:
       - m_Target: {fileID: 307771652804324735}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 6405506137514828035}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1057,7 +1064,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1347,10 +1354,10 @@ MonoBehaviour:
       - m_Target: {fileID: 307771652804324735}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7114141228024385134}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1386,7 +1393,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1500,10 +1507,10 @@ MonoBehaviour:
       - m_Target: {fileID: 307771652804324735}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7188084448044682314}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1539,7 +1546,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1653,10 +1660,10 @@ MonoBehaviour:
       - m_Target: {fileID: 307771652804324735}
         m_TargetAssemblyTypeName: Counter, Assembly-CSharp
         m_MethodName: Click
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8146965655996731503}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1692,7 +1699,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
