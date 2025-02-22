@@ -178,8 +178,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Math Quiz '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
-  m_sharedMaterial: {fileID: -7813014762709058882, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1af87d0d847d5124aa660119e7ed95fc, type: 2}
+  m_sharedMaterial: {fileID: -7813014762709058882, guid: 1af87d0d847d5124aa660119e7ed95fc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -273,7 +273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7813014762709058882, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
+  - {fileID: -7813014762709058882, guid: 1af87d0d847d5124aa660119e7ed95fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -335,7 +335,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -851,9 +851,6 @@ MonoBehaviour:
   - {fileID: 4615905677052063526, guid: 2ef923cb0931ddb4f881dea33780881e, type: 3}
   _defaultSegmentPrefabs:
   - {fileID: 1047329614940087166, guid: 72eec3b9137136d4a9312d0f5b6eaab9, type: 3}
-  - {fileID: 7157544565173426059, guid: c7b4046b13f4dd148ac841088fdd08a8, type: 3}
-  - {fileID: 4615905677052063526, guid: 1e969cd1e356add48a52a4247d47e34e, type: 3}
-  - {fileID: 4615905677052063526, guid: a6b2a334326d4a94893ad729beaed791, type: 3}
   _forceDefault: 1
   _orderSegmentPrefabs:
   - {fileID: 3456215981238688284, guid: eddc30e41ec3de64290b9a68536905d3, type: 3}
@@ -1003,6 +1000,70 @@ PrefabInstance:
       propertyPath: shopPanel
       value: 
       objectReference: {fileID: 2108940674}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: availableItems.Array.size
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b43353017f209449aec7cf355fdb98b, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e3ac11964e4384b4fb1c53082449fb37, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[3]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d502704a375c942e7909ed942566bcb8, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d49128751b67456591ab5cd8bb67350, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a6ed41b8a19004777b6e3662e5f6cfbb, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[7]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[8]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a0f2d739fd5348f4bad6daba7c64008, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[9]'
+      value: 
+      objectReference: {fileID: 11400000, guid: e64e6fa8ad50d41c0a3a7ebc135e27b9, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[10]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[11]'
+      value: 
+      objectReference: {fileID: 11400000, guid: cdac4f9121547436ead8f195972b4bb8, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[12]'
+      value: 
+      objectReference: {fileID: 11400000, guid: d73732d4deab144b1a7289393fd48ff6, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[13]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
+      propertyPath: 'availableItems.Array.data[14]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 335851c924fef42909c8833f1cad609f, type: 2}
     - target: {fileID: 7825735739393164656, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: m_Name
       value: =ShopManager=
@@ -1169,6 +1230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1857374621}
+  - component: {fileID: 1857374622}
   m_Layer: 0
   m_Name: PopUp
   m_TagString: Untagged
@@ -1186,14 +1248,29 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3.61, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 891570555}
   - {fileID: 1911689970}
   - {fileID: 372557531}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1857374622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857374620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00c669ac4a3dc3741a4c81d56f7fe1f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _titleText: {fileID: 1911689971}
+  _mainText: {fileID: 372557532}
+  _notificationSound: {fileID: 8300000, guid: 0acdbb7ca5726c848b4ef6c83247d661, type: 3}
 --- !u!1 &1911689969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,10 +1328,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\U0001F973You unlocked: \U0001F973\n"
+  m_text: "You unlocked: \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
+  m_sharedMaterial: {fileID: -7813014762709058882, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1348,7 +1425,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -7813014762709058882, guid: 93b069d9524492040b9f682bd0b56e9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

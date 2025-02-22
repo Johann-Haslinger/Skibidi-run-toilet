@@ -49,6 +49,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
+      propertyPath: _popMainText
+      value: Duoling style quiz (yippie)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
+      propertyPath: _popTitleText
+      value: NEW UNLOCK
+      objectReference: {fileID: 0}
+    - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: _segmentsToAdd.Array.size
       value: 1
       objectReference: {fileID: 0}

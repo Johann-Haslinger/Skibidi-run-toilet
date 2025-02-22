@@ -27,7 +27,7 @@ public class ShopManager : MonoBehaviour
         {
             CoinManager.instance.AddScore(-item.price);
             item.OnPurchase();
-            AudioSource.PlayClipAtPoint(purchaseSound, Camera.main.transform.position);
+            AudioSource.PlayClipAtPoint(purchaseSound, Vector3.zero, 0.3f);
             availableItems.Remove(item);
             UpdateShopUI();
         }
