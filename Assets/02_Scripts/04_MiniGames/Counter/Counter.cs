@@ -10,6 +10,7 @@ public class Counter : MonoBehaviour
     [SerializeField] private int _neededCount = 0;
     [SerializeField] private Color _rightColor;
     [SerializeField] private Color _wrongColor;
+    [SerializeField] private AudioClip _clickSound;
     
     private int _currentCounter = 0;
     private void Start()
@@ -43,6 +44,7 @@ public class Counter : MonoBehaviour
 
     private void CorrectClickVFX(GameObject obj)
     {
+        AudioSource.PlayClipAtPoint(_clickSound, Vector3.zero);
         var sR = obj.GetComponent<SpriteRenderer>();
         sR.color = _rightColor;
         obj.transform.DOScale(Vector3.one * 1.2f, 0.15f).OnComplete(() =>

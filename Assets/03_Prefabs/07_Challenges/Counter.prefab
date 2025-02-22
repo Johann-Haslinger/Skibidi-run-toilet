@@ -389,6 +389,7 @@ MonoBehaviour:
   _neededCount: 3
   _rightColor: {r: 0.05490196, g: 0.99215686, b: 0.05490196, a: 1}
   _wrongColor: {r: 0.9372549, g: 0.06666667, b: 0.003921569, a: 1}
+  _clickSound: {fileID: 8300000, guid: d9fe2f4e2ec6e914292ddb2df13b4e25, type: 3}
 --- !u!1 &6127307273837977184
 GameObject:
   m_ObjectHideFlags: 0

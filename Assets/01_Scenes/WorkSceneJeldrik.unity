@@ -590,6 +590,7 @@ MonoBehaviour:
   - {fileID: 1047329614940087166, guid: 72eec3b9137136d4a9312d0f5b6eaab9, type: 3}
   - {fileID: 7157544565173426059, guid: c7b4046b13f4dd148ac841088fdd08a8, type: 3}
   - {fileID: 4615905677052063526, guid: 1e969cd1e356add48a52a4247d47e34e, type: 3}
+  - {fileID: 4615905677052063526, guid: a6b2a334326d4a94893ad729beaed791, type: 3}
   _forceDefault: 1
   _orderSegmentPrefabs:
   - {fileID: 3456215981238688284, guid: eddc30e41ec3de64290b9a68536905d3, type: 3}

@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.36078432
       objectReference: {fileID: 0}
+    - target: {fileID: 2605052716726010613, guid: db15702933d484833941c84076f40413, type: 3}
+      propertyPath: _triangleFlySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b11ee0de2b68e84a8d3f352c241b41c, type: 3}
     - target: {fileID: 2866974027631594832, guid: db15702933d484833941c84076f40413, type: 3}
       propertyPath: m_Size.x
       value: 1
