@@ -36,7 +36,7 @@ public class UILightningBolt : MonoBehaviour
     ClearLightning();
     lightningParent.gameObject.SetActive(true);
     GenerateLightning(cloudUI.anchoredPosition, 0);
-    audioSource.PlayOneShot(lightningSound);  // Soundeffekt abspielen
+    audioSource.PlayOneShot(lightningSound, 0.1f);  // Soundeffekt abspielen
     Invoke("StopLightningStrike", 0.2f);
     ScheduleNextLightningStrike();
   }
