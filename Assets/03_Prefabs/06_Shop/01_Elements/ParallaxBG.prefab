@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1639394871546762348}
   - component: {fileID: 2774276674201320667}
+  - component: {fileID: -2771412474448772954}
   m_Layer: 5
   m_Name: ParallaxBG
   m_TagString: Untagged
@@ -65,3 +66,15 @@ MonoBehaviour:
     zPosition: 1
     copies: []
   baseSpeed: 1
+--- !u!114 &-2771412474448772954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338611088907655886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0a5491b74bf4e0c98c000948346d12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
