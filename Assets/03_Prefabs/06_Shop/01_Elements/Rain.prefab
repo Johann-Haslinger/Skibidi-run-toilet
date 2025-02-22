@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   raindropPrefab: {fileID: 2713924844678451361, guid: d0f1d5092ff8b43768c26cff535393c3, type: 3}
-  rainArea: {fileID: 0}
+  rainArea: {fileID: 5334225041665548486, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
   numberOfRaindrops: 100
   rainSpeed: 300
   rainSound: {fileID: 8300000, guid: f45101d867b9742a6a3cbf80444b5af5, type: 3}

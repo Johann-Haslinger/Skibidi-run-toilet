@@ -1,20 +1,28 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 
 public class RainEffectUI : MonoBehaviour
 {
     public GameObject raindropPrefab;  // Das Prefab für den Regentropfen
-    public RectTransform rainArea;     // Das UI-Panel, in dem der Regen stattfindet
     public int numberOfRaindrops = 100; // Anzahl der Regentropfen pro Regenfall
     public float rainSpeed = 2f;        // Geschwindigkeit, mit der die Tropfen fallen
     public AudioClip rainSound;         // Der Regen-Sound, den du im Inspektor zuweisen kannst
 
+    private RectTransform canvasRect;   // Referenz auf das Canvas-RectTransform
     private AudioSource audioSource;    // AudioSource zum Abspielen des Sounds
     private bool isRaining = false;     // Überwacht, ob es gerade regnet
 
     private void Start()
     {
+        // Zugriff auf das Canvas, falls es sich in einem Parent befindet
+        canvasRect = GetComponentInParent<Canvas>()?.GetComponent<RectTransform>();
+
+        if (canvasRect == null)
+        {
+            Debug.LogError("Kein Canvas im Parent gefunden!");
+            return;
+        }
+
         audioSource = GetComponent<AudioSource>();  // Hole die AudioSource-Komponente
         StartCoroutine(StartRainFalls());
     }
@@ -47,25 +55,26 @@ public class RainEffectUI : MonoBehaviour
 
     private IEnumerator GenerateRain()
     {
-        // Bestimme die Positionen innerhalb des UI-Containers
-        float minX = -rainArea.rect.width / 2;
-        float maxX = rainArea.rect.width / 2;
+        // Bestimme die Positionen innerhalb des Canvas (z. B. Bildschirmbreite)
+        float minX = -canvasRect.rect.width / 2;
+        float maxX = canvasRect.rect.width / 2;
 
         Debug.Log("Regen beginnt mit " + numberOfRaindrops + " Tropfen!");
 
         for (int i = 0; i < numberOfRaindrops; i++)
         {
-            // Erstelle einen Regentropfen an einer zufälligen Position innerhalb des Panels
+            // Erstelle einen Regentropfen an einer zufälligen Position innerhalb des Canvas
             Vector2 spawnPosition = new Vector2(
                 Random.Range(minX, maxX), 
-                rainArea.rect.height / 2);  // Startposition ist oben im Panel
+                canvasRect.rect.height / 2);  // Startposition ist oben im Canvas
 
+            // Instanziiere den Regentropfen zur Laufzeit
             GameObject raindrop = Instantiate(raindropPrefab, spawnPosition, Quaternion.identity);
-            raindrop.transform.SetParent(rainArea, false);
+            raindrop.transform.SetParent(canvasRect, false);  // Setze den Parent nur zur Laufzeit
 
-            // Lasse den Tropfen fallen und übergebe die rainArea
+            // Lasse den Tropfen fallen und übergebe das Canvas
             RainDrop raindropScript = raindrop.GetComponent<RainDrop>();
-            raindropScript.Setup(rainSpeed, rainArea);
+            raindropScript.Setup(rainSpeed, canvasRect);
 
             // Warte einen kleinen Moment, bevor der nächste Tropfen erzeugt wird
             yield return new WaitForSeconds(0.1f);
