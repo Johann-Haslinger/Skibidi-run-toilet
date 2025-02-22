@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shrecksophone
   m_EditorClassIdentifier: 
   itemName: Shrecksophone
-  price: 5
+  price: 15
   elementPrefab: {fileID: 2930321923622578269, guid: 20130ff7d4bc74c0ab62d540a955963d, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: 2991317068719954312, guid: 2a8b906593e1a4fc69bf2ed71541ec3b, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaterFall
   m_EditorClassIdentifier: 
   itemName: Waterfall
-  price: 500
+  price: 100
   elementPrefab: {fileID: 9019490038354108174, guid: a4d80d3e737e3eb499f7dc0a718ae6b4, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: 0}

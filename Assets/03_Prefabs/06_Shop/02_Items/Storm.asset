@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Storm
   m_EditorClassIdentifier: 
   itemName: Sotrm
-  price: 5
+  price: 30
   elementPrefab: {fileID: 8065870115154571519, guid: ef183a24c4ab745e5ab3daec911fe806, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: -4657137086927492859, guid: d6b478acd4f3a40519bf795cb8fe5ceb, type: 3}

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa60aebd1a1884ec891712fbf165369c, type: 3}
-  m_Name: Rain
+  m_Name: FlyingJeldrik I
   m_EditorClassIdentifier: 
-  itemName: Rain
-  price: 35
-  elementPrefab: {fileID: 3519028074377754950, guid: 620fb27302f7d4c7eaf015b7a31ae126, type: 3}
-  canBePurchasedMultipleTimes: 0
-  itemImage: {fileID: -4200595767318262429, guid: 1dccc5d62f1b142febb5cf9774f97b19, type: 3}
+  itemName: Flying Jeldrik
+  price: 2
+  elementPrefab: {fileID: 9140676800918133842, guid: 1bffa678c81984ea1b400510f3ff2169, type: 3}
+  canBePurchasedMultipleTimes: 1
+  itemImage: {fileID: -8038243397120979114, guid: 6d628b228eee14ad0ba053af9da446f6, type: 3}
