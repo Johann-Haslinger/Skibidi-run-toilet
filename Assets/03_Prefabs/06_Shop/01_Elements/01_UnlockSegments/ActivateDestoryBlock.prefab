@@ -58,16 +58,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: _segmentsToAdd.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[0]'
       value: 
-      objectReference: {fileID: 7157544565173426059, guid: d9be43ca0ce9ecc44bb48d04a9627eb1, type: 3}
+      objectReference: {fileID: 5793325703940205614, guid: f78eaae1f083b154aa30ce257ed600f6, type: 3}
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[1]'
       value: 
-      objectReference: {fileID: 7157544565173426059, guid: c7b4046b13f4dd148ac841088fdd08a8, type: 3}
+      objectReference: {fileID: 8329750327294400512, guid: e48fe48060d317442be866348d874c47, type: 3}
+    - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
+      propertyPath: '_segmentsToAdd.Array.data[2]'
+      value: 
+      objectReference: {fileID: 654037822760775018, guid: 825356b33c46b0041beba8721fd5e11e, type: 3}
+    - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
+      propertyPath: '_segmentsToAdd.Array.data[3]'
+      value: 
+      objectReference: {fileID: 654037822760775018, guid: 825356b33c46b0041beba8721fd5e11e, type: 3}
+    - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
+      propertyPath: '_segmentsToAdd.Array.data[4]'
+      value: 
+      objectReference: {fileID: 654037822760775018, guid: 825356b33c46b0041beba8721fd5e11e, type: 3}
     - target: {fileID: 6973446506996161827, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: m_Name
       value: ActivateDestoryBlock

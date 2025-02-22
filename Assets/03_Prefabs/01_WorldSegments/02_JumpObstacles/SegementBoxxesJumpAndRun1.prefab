@@ -14,11 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5278831890819813325, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       propertyPath: m_Color.g
-      value: 0.6039216
+      value: 0.5411765
       objectReference: {fileID: 0}
     - target: {fileID: 5278831890819813325, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.56078434
       objectReference: {fileID: 0}
     - target: {fileID: 7470309764764806588, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       propertyPath: m_Color.b
@@ -74,7 +74,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756740972142782591, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       propertyPath: m_Name
-      value: SegementBoxxesJumpAndRun
+      value: SegementBoxxesJumpAndRun1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -90,7 +90,7 @@ PrefabInstance:
       addedObject: {fileID: 836895264159450158}
     - targetCorrespondingSourceObject: {fileID: 8747566483185979742, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3938749699619673111}
+      addedObject: {fileID: 3222343675817605910}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
 --- !u!4 &4678489165055235591 stripped
@@ -296,6 +296,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 5349605163114479910, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 5349605163114479910, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.67
+      objectReference: {fileID: 0}
     - target: {fileID: 5777189194600066599, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.31
@@ -341,8 +349,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
---- !u!4 &3938749699619673111 stripped
+--- !u!4 &3222343675817605910 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 5777189194600066599, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5349605163114479910, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
   m_PrefabInstance: {fileID: 7387465852647209520}
   m_PrefabAsset: {fileID: 0}
