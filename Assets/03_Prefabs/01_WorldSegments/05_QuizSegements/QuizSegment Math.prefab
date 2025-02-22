@@ -10,12 +10,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1419798949900634508, guid: cce2a1eccba78c34c96041d62a2dfde7, type: 3}
       propertyPath: _potentialData.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1419798949900634508, guid: cce2a1eccba78c34c96041d62a2dfde7, type: 3}
       propertyPath: '_potentialData.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: cf0ef0807b9721d4fb3af571621ab0a2, type: 2}
+      objectReference: {fileID: 11400000, guid: f44f50970cffee141bb234896d880bb3, type: 2}
+    - target: {fileID: 1419798949900634508, guid: cce2a1eccba78c34c96041d62a2dfde7, type: 3}
+      propertyPath: '_potentialData.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 8add9e5ae23c00245bc8ddef12ef9e39, type: 2}
+    - target: {fileID: 1419798949900634508, guid: cce2a1eccba78c34c96041d62a2dfde7, type: 3}
+      propertyPath: '_potentialData.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 00c190b387daf2543b673a5979691160, type: 2}
     - target: {fileID: 6271655972144147915, guid: cce2a1eccba78c34c96041d62a2dfde7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.21
@@ -132,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8756740972142782591, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
       propertyPath: m_Name
-      value: QuizSegment Default
+      value: QuizSegment Math
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

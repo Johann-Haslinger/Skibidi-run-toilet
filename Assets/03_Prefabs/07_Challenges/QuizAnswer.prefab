@@ -132,9 +132,9 @@ MonoBehaviour:
   m_fontSize: 5
   m_fontSizeBase: 5
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 2
+  m_fontSizeMax: 5
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -295,7 +295,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -326,6 +326,8 @@ MonoBehaviour:
   _quiz: {fileID: 0}
   _number: 0
   _text: {fileID: 221869920789874615}
+  _correctColor: {r: 0.05490196, g: 0.99215686, b: 0.05490196, a: 1}
+  _wrongColor: {r: 0.9372549, g: 0.06666667, b: 0.003921569, a: 1}
 --- !u!1 &7349953552613255996
 GameObject:
   m_ObjectHideFlags: 0

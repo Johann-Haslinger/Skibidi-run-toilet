@@ -8,6 +8,7 @@ public class CameraShaker : MonoBehaviour
     [SerializeField] private float _duration;
 
     public static CameraShaker Instance;
+    private bool _shaking;
 
     private void Awake()
     {
@@ -20,21 +21,24 @@ public class CameraShaker : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public bool IsCamShaking()
+    {
+        return _shaking;
+    }
     
     public void DefaultShake()
     {
-        var temp = transform.position;
-        transform.DOShakePosition(_duration, _strength).OnComplete(() =>
-        {
-            transform.position = temp;
-        });
+        CustomShake(_duration, _strength);
     }
 
     public void CustomShake(float duration, Vector3 strength)
     {
+        _shaking = true;
         var temp = transform.position;
         transform.DOShakePosition(duration, strength).OnComplete(() =>
         {
+            _shaking = false;
             transform.position = temp;
         });
     }
