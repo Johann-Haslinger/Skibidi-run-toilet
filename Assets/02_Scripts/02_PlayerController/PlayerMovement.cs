@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 public class PlayerMovement : MonoBehaviour
@@ -12,13 +13,24 @@ public class PlayerMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnMouseDown()
+    private void Update()
     {
-        if (JumpAllowed())
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(1))
+        {
+            if (JumpAllowed())
+            {
+                Jump();
+            }
+        }
+    }
+
+    /*private void OnMouseDown()
+    {
+        if (JumpAllowed() && )
         {
             Jump();
         }
-    }
+    }*/
 
     private bool JumpAllowed()
     {
