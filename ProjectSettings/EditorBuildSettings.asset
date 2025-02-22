@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/01_Scenes/MainMenu.unity
     guid: ec247b2c20703784baf2bd50ad80c99b
   - enabled: 1
-    path: Assets/01_Scenes/WorkSceneJeldrik.unity
-    guid: 415c619839d0927428364b840644cf63
+    path: Assets/01_Scenes/GameScene.unity
+    guid: 9cf9b3df5e9d9e1438e150c950a37423
   - enabled: 1
     path: Assets/01_Scenes/EndScreen.unity
     guid: d5bbf10d3715fc547b110168338d2836
