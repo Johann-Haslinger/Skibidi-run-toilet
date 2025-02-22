@@ -5,6 +5,7 @@ using UnityEngine;
 public class ClickerObstacle : MonoBehaviour
 {
     [SerializeField] private List<Color> _colors;
+    [SerializeField] private AudioClip _clickSound;
     
     private int _currentClicks;
     private SpriteRenderer _sR;
@@ -31,6 +32,7 @@ public class ClickerObstacle : MonoBehaviour
     private void Click()
     {
         CameraShaker.Instance.CustomShake(0.1f, new Vector3(0.1f, 0.1f));
+        AudioSource.PlayClipAtPoint(_clickSound, Vector3.zero);
         _currentClicks++;
         _sR.color = _colors[_currentClicks];
         

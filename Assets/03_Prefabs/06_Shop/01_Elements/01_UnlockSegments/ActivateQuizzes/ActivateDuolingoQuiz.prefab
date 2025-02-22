@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 5302681588959902747, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: '_segmentsToAdd.Array.data[0]'
       value: 
-      objectReference: {fileID: 1047329614940087166, guid: 3a634bc307e5a81439374c165496a70d, type: 3}
+      objectReference: {fileID: 5584344012189061509, guid: 53483fdcb022d3f4a811720c7fd44ac0, type: 3}
     - target: {fileID: 6973446506996161827, guid: 645c0eda4e593d746a75ec4cf0898040, type: 3}
       propertyPath: m_Name
       value: ActivateDuolingoQuiz

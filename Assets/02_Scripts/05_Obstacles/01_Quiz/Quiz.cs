@@ -13,6 +13,8 @@ public class Quiz : MonoBehaviour
     [SerializeField] private GameObject _coinHolder;
     [SerializeField] private GameObject _coinHolderTarget;
     [SerializeField] private GameObject _quizHolder;
+    [SerializeField] private AudioClip _rightAnswerSound;
+    [SerializeField] private AudioClip _wrongAnswerSound;
 
     private void Start()
     {
@@ -44,6 +46,7 @@ public class Quiz : MonoBehaviour
 
     private void QuizSuccess(int numClicked)
     {
+        AudioSource.PlayClipAtPoint(_rightAnswerSound, Vector3.zero);
         _answerBlocks[numClicked].CorrectAnswer();
         _coinHolder.transform.DOMove(_coinHolderTarget.transform.position, 0.15f);
         
@@ -52,6 +55,7 @@ public class Quiz : MonoBehaviour
 
     private void QuizFail(int numClicked)
     {
+        AudioSource.PlayClipAtPoint(_wrongAnswerSound, Vector3.zero);
         _answerBlocks[numClicked].WrongAnswer();
         foreach (var coin in _coins)
         {

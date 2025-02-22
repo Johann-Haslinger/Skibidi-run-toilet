@@ -586,8 +586,11 @@ MonoBehaviour:
   _startSpeed: 5
   _randomSegmentPrefabs:
   - {fileID: 4615905677052063526, guid: 2ef923cb0931ddb4f881dea33780881e, type: 3}
-  _defaultSegmentPrefabs: []
-  _forceDefault: 0
+  _defaultSegmentPrefabs:
+  - {fileID: 1047329614940087166, guid: 72eec3b9137136d4a9312d0f5b6eaab9, type: 3}
+  - {fileID: 7157544565173426059, guid: c7b4046b13f4dd148ac841088fdd08a8, type: 3}
+  - {fileID: 4615905677052063526, guid: 1e969cd1e356add48a52a4247d47e34e, type: 3}
+  _forceDefault: 1
   _orderSegmentPrefabs:
   - {fileID: 3456215981238688284, guid: eddc30e41ec3de64290b9a68536905d3, type: 3}
   - {fileID: 3456215981238688284, guid: 667e6e1ab6cd64d47bdd4235aef95912, type: 3}

@@ -98,5 +98,6 @@ public class PlayerMovement : MonoBehaviour
             transform.DOScale(Vector3.one, 0.1f);
         });
         CameraShaker.Instance.DefaultShake();
+        AudioSource.PlayClipAtPoint(_landSound, Vector3.zero);
     }
 }

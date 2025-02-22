@@ -371,3 +371,4 @@ MonoBehaviour:
   - {r: 1, g: 1, b: 1, a: 0.15686275}
   - {r: 1, g: 1, b: 1, a: 0.08627451}
   - {r: 1, g: 1, b: 1, a: 0.03529412}
+  _clickSound: {fileID: 8300000, guid: d9fe2f4e2ec6e914292ddb2df13b4e25, type: 3}

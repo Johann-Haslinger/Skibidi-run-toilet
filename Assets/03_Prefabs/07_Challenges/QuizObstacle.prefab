@@ -413,7 +413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _title: {fileID: 2525358289947851589}
-  _quizData: {fileID: 11400000, guid: cf0ef0807b9721d4fb3af571621ab0a2, type: 2}
+  _potentialData: []
   _answerBlocks:
   - {fileID: 3974394945160342007}
   - {fileID: 1795863690428671745}
@@ -426,6 +426,8 @@ MonoBehaviour:
   _coinHolder: {fileID: 7650899667456622760}
   _coinHolderTarget: {fileID: 967804369518194390}
   _quizHolder: {fileID: 1277056428439419475}
+  _rightAnswerSound: {fileID: 8300000, guid: 1cab9fe5e82da8243850416852931703, type: 3}
+  _wrongAnswerSound: {fileID: 8300000, guid: 48517449fccaea645bcbb719d0f12979, type: 3}
 --- !u!1001 &608225612401930118
 PrefabInstance:
   m_ObjectHideFlags: 0
