@@ -452,6 +452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SubwaySurfers
       objectReference: {fileID: 0}
+    - target: {fileID: 8444588797119718523, guid: c0b710909c037493d9e912ac3e43784e, type: 3}
+      propertyPath: 'm_EnabledAudioTracks.Array.data[0]'
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
