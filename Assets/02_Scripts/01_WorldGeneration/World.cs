@@ -9,8 +9,10 @@ public class World : MonoBehaviour
     [SerializeField] private float _startSpeed;
     [SerializeField] private List<GameObject> _randomSegmentPrefabs = new List<GameObject>();
     [SerializeField] private List<GameObject> _defaultSegmentPrefabs = new List<GameObject>();
+    [SerializeField] private bool _forceDefault;
     [SerializeField] private List<GameObject> _orderSegmentPrefabs = new List<GameObject>();
     [SerializeField] private GameObject _startSegment;
+   
     
     private Dictionary<int, GameObject> _orderedSegmentDict = new Dictionary<int, GameObject>();
 
@@ -82,6 +84,12 @@ public class World : MonoBehaviour
         {
             return _orderedSegmentDict[_currentSegmentCount];
         }
+
+        if (_forceDefault)
+        {
+            return _defaultSegmentPrefabs[Random.Range(0, _defaultSegmentPrefabs.Count)];
+        }
+        
         return _randomSegmentPrefabs.Count == 0 ? 
             _defaultSegmentPrefabs[Random.Range(0, _defaultSegmentPrefabs.Count)] 
             : _randomSegmentPrefabs[Random.Range(0, _randomSegmentPrefabs.Count)];
