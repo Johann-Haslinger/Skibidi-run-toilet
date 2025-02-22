@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ShyBrackey
   m_EditorClassIdentifier: 
   itemName: Shy Brackey
-  price: 15
+  price: 20
   elementPrefab: {fileID: 7442674871401509808, guid: 4fa5117b627d845019f17203f5dcba08, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: 1347831633336428573, guid: 7db50f2368f7c427ebb80814b9fa1e48, type: 3}

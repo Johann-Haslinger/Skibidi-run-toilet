@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Background
   m_EditorClassIdentifier: 
   itemName: Background
-  price: 10
+  price: 45
   elementPrefab: {fileID: 7012142936414566490, guid: 2b624814ea5614f198ea7f293553eccc, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: -1955448553306655712, guid: 5b99e439c007c4e03bdcf8dc6d6b73b0, type: 3}

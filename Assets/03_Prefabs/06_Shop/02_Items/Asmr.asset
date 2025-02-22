@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Asmr
   m_EditorClassIdentifier: 
   itemName: Asmr
-  price: 20
+  price: 25
   elementPrefab: {fileID: 881494142074355004, guid: ed26d3f2c7185449ea7509a7cadf5c3e, type: 3}
   canBePurchasedMultipleTimes: 0
   itemImage: {fileID: -5730372425673557255, guid: b1dd0db4b01a048508d480795c351bb1, type: 3}
