@@ -72,11 +72,6 @@ public class World : MonoBehaviour
             _startSegment.transform.position = _startPos;
         }
     }
-
-    private void MoveWorld()
-    {
-        
-    }
     
     private bool IsSegmentOrdered(int position)
     {

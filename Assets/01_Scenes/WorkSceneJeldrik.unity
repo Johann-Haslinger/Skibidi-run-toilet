@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 490151090}
   - component: {fileID: 490151091}
   - component: {fileID: 490151092}
-  - component: {fileID: 490151093}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -286,48 +285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 1378734112}
---- !u!114 &490151093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490151086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c96ebaa8218e6749923245bcee9a63a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _text: "Would you rather fight 100 duck-sized horses or 1 horse-sized duck?;Ducks;Horses;Both;Call
-    animal control;0|Would you rather have spaghetti for hair or marshmallows for
-    fingers?;Spaghetti;Marshmallows;Neither, thanks;Can I choose chocolate?;0|Would
-    you rather always talk like a pirate or a robot?;Pirate;Robot;Both at once;Mute
-    button, please;0|Would you rather live in a house made of candy or cheese?;Candy;Cheese;Both,
-    but only for a week;I\u2019ll stick with bricks;0|Would you rather never stop
-    sneezing or never stop hiccupping?;Sneezing;Hiccupping;Both, I love suffering;Mute
-    my body, please;0|Would you rather have a pet dragon or a pet unicorn?;Dragon;Unicorn;Both,
-    I'm greedy;Can I get a talking cat instead?;0|Would you rather only be able to
-    walk backward or hop everywhere?;Backward;Hop;Roll around instead;I'll stay home
-    forever;0|Would you rather always be 10 minutes late or 20 minutes early?;Late;Early;Time
-    is irrelevant;I\u2019ll skip everything;0|Would you rather eat only pizza or
-    only ice cream forever?;Pizza;Ice cream;Can I mix them?;I\u2019ll just cry instead;0|Would
-    you rather have a rewind button or a pause button for life?;Rewind;Pause;Both,
-    I\u2019m indecisive;Fast forward, please;0|Would you rather talk to animals or
-    speak every language?;Animals;Languages;Both, I'm unstoppable;I'll stick with
-    emojis;0|Would you rather always be barefoot or always wear clown shoes?;Barefoot;Clown
-    shoes;Hover everywhere;Who needs feet?;0|Would you rather have wings or gills?;Wings;Gills;Both,
-    I want options;Can I just teleport?;0|Would you rather live in space or underwater?;Space;Underwater;Both,
-    I love danger;I\u2019ll stay on land, thanks;0|Would you rather have super strength
-    or invisibility?;Strength;Invisibility;Both, I'm greedy;Can I get mind-reading
-    instead?;0|Would you rather always sing everything you say or dance everywhere
-    you go?;Sing;Dance;Both, it's a musical now;Can I just mime?;0|Would you rather
-    be able to freeze time or travel through time?;Freeze;Travel;Both, I\u2019ll
-    control everything;I\u2019ll stay in the present, thanks;0|Would you rather eat
-    only sweet food or only salty food forever?;Sweet;Salty;Both, I hate decisions;Can
-    I have bland food?;0|Would you rather be a giant hamster or a tiny elephant?;Hamster;Elephant;Both,
-    a real spectacle;I'll stay human;0|Would you rather live without internet or
-    without chocolate?;Internet;Chocolate;Both sound awful;I\u2019ll cry either way;0"
-  _name: WouldYouRather
 --- !u!114 &572458973 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3455061314680249170, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
@@ -585,10 +542,11 @@ MonoBehaviour:
   _startPos: {x: 0, y: -5, z: 0}
   _startSpeed: 5
   _randomSegmentPrefabs:
-  - {fileID: 4615905677052063526, guid: 2ef923cb0931ddb4f881dea33780881e, type: 3}
+  - {fileID: 8756740972142782591, guid: 6845d720c8ff8fc4b8e1174977a14dc5, type: 3}
+  - {fileID: 1662194902326409836, guid: 676e79d45607f734487b0ab0f2b07959, type: 3}
   _defaultSegmentPrefabs:
   - {fileID: 1047329614940087166, guid: 72eec3b9137136d4a9312d0f5b6eaab9, type: 3}
-  _forceDefault: 1
+  _forceDefault: 0
   _orderSegmentPrefabs:
   - {fileID: 3456215981238688284, guid: eddc30e41ec3de64290b9a68536905d3, type: 3}
   - {fileID: 3456215981238688284, guid: 667e6e1ab6cd64d47bdd4235aef95912, type: 3}
@@ -739,7 +697,7 @@ PrefabInstance:
       objectReference: {fileID: 2108940674}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: availableItems.Array.size
-      value: 20
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[0]'
@@ -748,75 +706,75 @@ PrefabInstance:
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 93e3aed75f4b1f84aaa8a6f002004c43, type: 2}
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: ef64728d846391a4384f3d1217b7a6a0, type: 2}
+      objectReference: {fileID: 11400000, guid: 93e3aed75f4b1f84aaa8a6f002004c43, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: d7f501b64a0b8174d87b17b103a38408, type: 2}
+      objectReference: {fileID: 11400000, guid: e3ac11964e4384b4fb1c53082449fb37, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[4]'
       value: 
-      objectReference: {fileID: 11400000, guid: 3c2343ead925304419008e70e8d5bc0a, type: 2}
+      objectReference: {fileID: 11400000, guid: ef64728d846391a4384f3d1217b7a6a0, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[5]'
       value: 
-      objectReference: {fileID: 11400000, guid: db1d060d3630c1245838cff784200fe8, type: 2}
+      objectReference: {fileID: 11400000, guid: d502704a375c942e7909ed942566bcb8, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[6]'
       value: 
-      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+      objectReference: {fileID: 11400000, guid: e64e6fa8ad50d41c0a3a7ebc135e27b9, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[7]'
       value: 
-      objectReference: {fileID: 11400000, guid: e3ac11964e4384b4fb1c53082449fb37, type: 2}
+      objectReference: {fileID: 11400000, guid: d7f501b64a0b8174d87b17b103a38408, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[8]'
       value: 
-      objectReference: {fileID: 11400000, guid: d502704a375c942e7909ed942566bcb8, type: 2}
+      objectReference: {fileID: 11400000, guid: 3d49128751b67456591ab5cd8bb67350, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[9]'
       value: 
-      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+      objectReference: {fileID: 11400000, guid: 3c2343ead925304419008e70e8d5bc0a, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[10]'
       value: 
-      objectReference: {fileID: 11400000, guid: 3d49128751b67456591ab5cd8bb67350, type: 2}
+      objectReference: {fileID: 11400000, guid: a6ed41b8a19004777b6e3662e5f6cfbb, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[11]'
       value: 
-      objectReference: {fileID: 11400000, guid: a6ed41b8a19004777b6e3662e5f6cfbb, type: 2}
+      objectReference: {fileID: 11400000, guid: 1a0f2d739fd5348f4bad6daba7c64008, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[12]'
       value: 
-      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+      objectReference: {fileID: 11400000, guid: db1d060d3630c1245838cff784200fe8, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[13]'
       value: 
-      objectReference: {fileID: 11400000, guid: 1a0f2d739fd5348f4bad6daba7c64008, type: 2}
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[14]'
       value: 
-      objectReference: {fileID: 11400000, guid: e64e6fa8ad50d41c0a3a7ebc135e27b9, type: 2}
+      objectReference: {fileID: 11400000, guid: cdac4f9121547436ead8f195972b4bb8, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[15]'
       value: 
-      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+      objectReference: {fileID: 11400000, guid: d73732d4deab144b1a7289393fd48ff6, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[16]'
       value: 
-      objectReference: {fileID: 11400000, guid: cdac4f9121547436ead8f195972b4bb8, type: 2}
+      objectReference: {fileID: 11400000, guid: 335851c924fef42909c8833f1cad609f, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[17]'
       value: 
-      objectReference: {fileID: 11400000, guid: d73732d4deab144b1a7289393fd48ff6, type: 2}
+      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[18]'
       value: 
-      objectReference: {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+      objectReference: {fileID: 11400000, guid: 335851c924fef42909c8833f1cad609f, type: 2}
     - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: 'availableItems.Array.data[19]'
       value: 
