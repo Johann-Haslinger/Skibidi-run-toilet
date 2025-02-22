@@ -48,6 +48,7 @@ MonoBehaviour:
   shopItemPrefab: {fileID: 2453917394561881, guid: f28c2a6574992429f83666a96b4f6597, type: 3}
   availableItems:
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  - {fileID: 11400000, guid: e64e6fa8ad50d41c0a3a7ebc135e27b9, type: 2}
   - {fileID: 11400000, guid: e3ac11964e4384b4fb1c53082449fb37, type: 2}
   - {fileID: 11400000, guid: d502704a375c942e7909ed942566bcb8, type: 2}
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
