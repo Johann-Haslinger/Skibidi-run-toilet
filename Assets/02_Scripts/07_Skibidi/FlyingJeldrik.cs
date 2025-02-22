@@ -40,7 +40,7 @@ public class FlyingJeldrik : MonoBehaviour
             audioSource = gameObject.AddComponent<AudioSource>();
         }
 
-       
+
             Debug.LogError("Kein CoinManager in der Szene gefunden!");
  
     }
