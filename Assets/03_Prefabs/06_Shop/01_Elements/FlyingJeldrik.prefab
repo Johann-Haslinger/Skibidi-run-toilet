@@ -91,8 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageRect: {fileID: 2605344986782356350}
   speed: 500
-  collisionSound: {fileID: 8300000, guid: 338c1a1c6fd9940daa9678b44856e869, type: 3}
-  coinManager: {fileID: 0}
+  collisionSound: {fileID: 8300000, guid: 32b090b32c3bf47369d61146aa7e7c61, type: 3}
 --- !u!114 &1174805700266867975
 MonoBehaviour:
   m_ObjectHideFlags: 0

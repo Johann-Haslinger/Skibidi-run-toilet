@@ -49,3 +49,4 @@ MonoBehaviour:
   availableItems:
   - {fileID: 11400000, guid: 7ffa5179f30fd49809685528f024fa82, type: 2}
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
+  purchaseSound: {fileID: 8300000, guid: ab786d0d436fc4679bffb0bbb36d07e3, type: 3}

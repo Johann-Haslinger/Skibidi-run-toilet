@@ -9,6 +9,7 @@ public class ShopManager : MonoBehaviour
     public Transform shopPanel;
     public GameObject shopItemPrefab;
     public List<ShopItem> availableItems = new List<ShopItem>();
+    public AudioClip purchaseSound; 
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class ShopManager : MonoBehaviour
         {
             CoinManager.instance.AddScore(-item.price);
             item.OnPurchase();
+            AudioSource.PlayClipAtPoint(purchaseSound, Camera.main.transform.position);
             availableItems.Remove(item);
             UpdateShopUI();
         }
