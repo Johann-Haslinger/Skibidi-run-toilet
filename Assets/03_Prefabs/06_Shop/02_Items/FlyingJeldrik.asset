@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa60aebd1a1884ec891712fbf165369c, type: 3}
   m_Name: FlyingJeldrik
   m_EditorClassIdentifier: 
-  itemName: Jeldrik Ball
+  itemName: Flying Jeldrik
   price: 2
   elementPrefab: {fileID: 9140676800918133842, guid: 1bffa678c81984ea1b400510f3ff2169, type: 3}
   canBePurchasedMultipleTimes: 1
-  isPurchased: 0
+  itemImage: {fileID: -3678196804479833358, guid: 432acda78150f456887c145a30400ab4, type: 3}

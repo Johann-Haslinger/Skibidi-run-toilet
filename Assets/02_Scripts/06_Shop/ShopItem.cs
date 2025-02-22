@@ -5,7 +5,9 @@ public class ShopItem : ScriptableObject
 {
     public string itemName;
     public int price;
-    public GameObject elementPrefab; // Das Element (z. B. Bild oder Video), das gespawnt wird
+    public GameObject elementPrefab; // Das Element, das gespawnt wird
+    public bool canBePurchasedMultipleTimes = false; // Legt fest, ob das Item mehrmals gekauft werden kann
+    public Sprite itemImage;
 
     public virtual void OnPurchase()
     {
