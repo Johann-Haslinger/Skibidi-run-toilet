@@ -4,7 +4,8 @@ public class FlyingJeldrik : MonoBehaviour
 {
     public RectTransform imageRect; // Das RectTransform des Bildes
     public float speed = 500f; // Geschwindigkeit des Bildes
-  
+    public AudioClip collisionSound; // Der Ton, der abgespielt wird
+
     private Vector2 direction; // Richtung, in die sich das Bild bewegt
     private float minX, maxX, minY, maxY;
     private AudioSource audioSource;
