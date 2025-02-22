@@ -65,8 +65,8 @@ VideoPlayer:
   m_DirectAudioVolumes:
   - 1
   m_Url: 
-  m_EnabledAudioTracks: 00
-  m_DirectAudioMutes: 00
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
@@ -120,8 +120,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.8595, y: -633.8169}
-  m_SizeDelta: {x: 325.3759, y: 481.1397}
+  m_AnchoredPosition: {x: -64.602875, y: -586.6377}
+  m_SizeDelta: {x: 400.8626, y: 575.4982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7391491531822864343
 CanvasRenderer:
