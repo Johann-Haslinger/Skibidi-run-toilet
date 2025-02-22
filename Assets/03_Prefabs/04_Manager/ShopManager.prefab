@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614e30b3fb6bf42c9a4f984f9ae18e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shopPanel: {fileID: 0}
+  shopPanel: {fileID: 1149773732172246206, guid: b56c5fe1a324f4eb5b99b5b229b6205f, type: 3}
   shopItemPrefab: {fileID: 2453917394561881, guid: f28c2a6574992429f83666a96b4f6597, type: 3}
   availableItems:
   - {fileID: 11400000, guid: 625f6e1afc8b041b988f4dd406898f85, type: 2}
