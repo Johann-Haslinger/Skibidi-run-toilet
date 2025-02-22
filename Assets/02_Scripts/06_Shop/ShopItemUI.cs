@@ -31,7 +31,7 @@ public class ShopItemUI : MonoBehaviour
         else
         {
 
-            itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0.5f);
+            itemImage.color = new Color(itemImage.color.r, itemImage.color.g, itemImage.color.b, 0.1f);
         }
     }
 }
