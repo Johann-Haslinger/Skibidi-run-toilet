@@ -1004,6 +1004,18 @@ PrefabInstance:
       value: PopUp
       objectReference: {fileID: 0}
     - target: {fileID: 4932441093202081034, guid: 989ebfe7aa52d8043985e7091858a48f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932441093202081034, guid: 989ebfe7aa52d8043985e7091858a48f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932441093202081034, guid: 989ebfe7aa52d8043985e7091858a48f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4932441093202081034, guid: 989ebfe7aa52d8043985e7091858a48f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
