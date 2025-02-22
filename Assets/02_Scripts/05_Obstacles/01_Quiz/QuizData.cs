@@ -5,6 +5,6 @@ using UnityEngine;
 public class QuizData : ScriptableObject
 {
     public string Question;
-    public List<string> Answers;
+    public List<string> Answers = new List<string>();
     public int CorrectAnswerIndex;
 }
