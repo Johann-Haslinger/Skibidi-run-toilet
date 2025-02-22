@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class QuizCreator : MonoBehaviour
 {
+    #if UNITY_EDITOR
     [SerializeField] private string _text;
     
     [SerializeField] private string _name;
@@ -52,4 +53,5 @@ public class QuizCreator : MonoBehaviour
         asset.CorrectAnswerIndex = int.Parse(lines[5]);
         return asset;
     }
+    #endif
 }
