@@ -16,4 +16,4 @@ MonoBehaviour:
   price: 10
   elementPrefab: {fileID: 5141556013079397552, guid: 348d6ad764f114d42ba7c59d089e0478, type: 3}
   canBePurchasedMultipleTimes: 0
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 3296983153516356058, guid: 98209eab6594e45e9ac90748bda7fbf4, type: 3}
