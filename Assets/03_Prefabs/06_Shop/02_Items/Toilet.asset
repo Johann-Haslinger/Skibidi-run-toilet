@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa60aebd1a1884ec891712fbf165369c, type: 3}
   m_Name: Toilet
   m_EditorClassIdentifier: 
-  itemName: 
-  price: 0
-  elementPrefab: {fileID: 0}
+  itemName: Toilet
+  price: 12
+  elementPrefab: {fileID: 1067434183149281694, guid: 9bad07731349141efa8d29c4617b5322, type: 3}
   canBePurchasedMultipleTimes: 0
-  itemImage: {fileID: 0}
+  itemImage: {fileID: 1749793893293920945, guid: d7356e3afef4c485ca96b63fc38eb0c9, type: 3}
