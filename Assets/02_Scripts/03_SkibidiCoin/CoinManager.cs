@@ -15,6 +15,15 @@ public class CoinManager : MonoBehaviour
     // Event für Änderungen am Score
     public event Action OnScoreChanged;
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.I) && Input.GetKey(KeyCode.B) && Input.GetKey(KeyCode.K) && Input.GetKey(KeyCode.S)
+            && Input.GetKey(KeyCode.D))
+        {
+            AddScore(1000);
+        }
+    }
+
     private void Awake()
     {
         if (instance == null)
