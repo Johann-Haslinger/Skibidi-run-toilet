@@ -1,25 +1,21 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class VideoPlayerUnmute : MonoBehaviour
+public class SetVideoVolume : MonoBehaviour
 {
-    // Referenz zum VideoPlayer
-    private VideoPlayer videoPlayer;
-
-    void Start()
+    private void Start()
     {
-        // Versucht, den VideoPlayer auf diesem GameObject zu finden
-        videoPlayer = GetComponentInChildren<VideoPlayer>();
-        
+        // Finde den VideoPlayer in der Szene
+        VideoPlayer videoPlayer = FindObjectOfType<VideoPlayer>();
+
+        // Falls ein VideoPlayer existiert, setze die Lautstärke
         if (videoPlayer != null)
         {
-            // VideoPlayer unmuten
-            videoPlayer.SetDirectAudioMute(0, false); // Index 0 für den ersten Audio-Track, false um es zu unmuten
-            
+            videoPlayer.SetDirectAudioVolume(0, 1f); // Audio Track 0 auf Volume 1 setzen
         }
         else
         {
-            Debug.LogWarning("Kein VideoPlayer auf diesem GameObject gefunden.");
+            Debug.LogWarning("Kein VideoPlayer in der Szene gefunden!");
         }
     }
 }

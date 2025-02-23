@@ -1,11 +1,15 @@
 using UnityEngine;
-using TMPro; // Wichtig für TextMesh Pro!
+using TMPro;
+using System;
 
 public class CoinManager : MonoBehaviour
 {
     public static CoinManager instance;
     public int score = 0;
-    public TextMeshProUGUI scoreText; 
+    public TextMeshProUGUI scoreText;
+
+    // Event für Änderungen am Score
+    public event Action OnScoreChanged;
 
     private void Awake()
     {
@@ -23,6 +27,7 @@ public class CoinManager : MonoBehaviour
     {
         score += amount;
         UpdateScoreUI();
+        OnScoreChanged?.Invoke(); // Event auslösen
     }
 
     private void UpdateScoreUI()

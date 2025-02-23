@@ -310,11 +310,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ce6881dbfade434bb5138782f175782, type: 3}
---- !u!224 &1225164387 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 305232009317904808, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
-  m_PrefabInstance: {fileID: 1474437019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1474437019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,6 +324,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 305232009317904808, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305232009317904808, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 305232009317904808, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4779554325596839219, guid: 379aa35d2284e415db7261b8b13854c0, type: 3}
@@ -749,10 +752,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6444333525931139370, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
-      propertyPath: shopPanel
-      value: 
-      objectReference: {fileID: 1225164387}
     - target: {fileID: 7825735739393164656, guid: b03a9c8e9158f485a8fe91466a33acee, type: 3}
       propertyPath: m_Name
       value: ShopManager

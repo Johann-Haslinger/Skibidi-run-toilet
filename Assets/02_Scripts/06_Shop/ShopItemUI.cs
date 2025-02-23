@@ -10,6 +10,17 @@ public class ShopItemUI : MonoBehaviour
 
     private ShopItem currentItem;
 
+    private void OnEnable()
+    {
+        CoinManager.instance.OnScoreChanged += UpdateItemUI;
+    }
+
+    private void OnDisable()
+    {
+        if (CoinManager.instance != null)
+            CoinManager.instance.OnScoreChanged -= UpdateItemUI;
+    }
+
     public void Setup(ShopItem item)
     {
         currentItem = item;
